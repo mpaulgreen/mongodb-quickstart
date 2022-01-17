@@ -13,13 +13,17 @@ The application can be packaged using:
 
 
 # Running mongo on localhost
-```docker-compose up -d```<br>
-```docker ps // you can identify the container kogito-mongodb container running```<br>
-```docker exec -it kogito-mongodb mongo```<br>
+```docker-compose up -d``` <br>
 
-# To build the image
+```docker ps // you can identify the container kogito-mongodb container running``` <br>
 
-```./mvnw package -Dquarkus.container-image.build=true```
-```docker image tag mrigankapaul/mongodb-quickstart:1.0.0-SNAPSHOT quay.io/mpaulgreen/mongodb-quickstart:2```
-```docker push quay.io/mpaulgreen/mongodb-quickstart:2```
+```docker exec -it kogito-mongodb mongo``` <br>
+
+# To build the image and push it to quay registry
+
+```./mvnw package -Dquarkus.container-image.build=true``` <br>
+
+```docker image tag mrigankapaul/mongodb-quickstart:1.0.0-SNAPSHOT quay.io/mpaulgreen/mongodb-quickstart:2``` <br>
+
+```docker push quay.io/mpaulgreen/mongodb-quickstart:2``` <br>
 
