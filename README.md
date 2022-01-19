@@ -23,7 +23,7 @@ The application can be packaged using:
 
 ```./mvnw package -Dquarkus.container-image.build=true``` <br>
 
-```docker image tag mrigankapaul/mongodb-quickstart:1.0.0-SNAPSHOT quay.io/mpaulgreen/mongodb-quickstart:2``` <br>
+```docker image tag mrigankapaul/mongodb-quickstart:1.0.0-SNAPSHOT quay.io/mpaulgreen/mongodb-quickstart:3``` <br>
 
-```docker push quay.io/mpaulgreen/mongodb-quickstart:2``` <br>
+```docker push quay.io/mpaulgreen/mongodb-quickstart:3``` <br>
 
