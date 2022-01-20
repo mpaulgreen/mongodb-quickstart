@@ -12,6 +12,7 @@ public class FruitService {
     @Inject MongoClient mongoClient;
 
     public void add(Fruit fruit){
+        System.out.println(fruit.getIdentifier());
         getCollection().insertOne(fruit);
     }
 
